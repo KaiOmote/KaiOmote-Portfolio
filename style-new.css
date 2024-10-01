@@ -363,19 +363,20 @@ article .icon-small {
 
 .label-container {
     display: flex;
-    max-height: fit-content;
+    height: fit-content;
 }
 
 .accordion-text {
     font-size: 1.2rem;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
     margin: 0;
-    transition: 1s ease;
+    padding: 0 1rem;
+    transition: height 1s ease, padding 2s ease;
 }
 
 .education-accordion.expanded .accordion-text {
-    max-height: fit-content;
+    height: fit-content;
     padding: 1rem;
 }
 
