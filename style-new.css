@@ -364,6 +364,7 @@ article .icon-small {
 .label-container {
     display: flex;
     height: fit-content;
+    margin: 0.5rem;
 }
 
 .accordion-text {
@@ -371,7 +372,7 @@ article .icon-small {
     height: 0;
     overflow: hidden;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     transition: height 1s ease, padding 2s ease;
 }
 
