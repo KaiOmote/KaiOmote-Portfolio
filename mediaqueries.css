@@ -1,12 +1,14 @@
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1600px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers {
-        flex-wrap: wrap;
+    .section__pic-container {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto 5rem;
     }
-}
+} */
 
 @media screen and (max-width: 1000px) {
     #nav-bar {
@@ -15,13 +17,13 @@
     #nav-hamburger {
         display: flex;
     }
-    #experience, .experience-detail-container {
+    #experience, .experience-section-container {
         margin-top: 2rem;
     }
     #profile, .section-container {
         display: block;
     }
-    .arrow {
+    .icon-arrow {
         display: none;
     }
     section, .section-container {

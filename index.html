@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kai Omote Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-new.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Skills</a></li>
                 <li><a href="#education">Learning & Development</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,7 +29,7 @@
             </div>
             <div class="hamburger-links">
                 <li><a href="#about" onclick="togglemenu()">About</a></li>
-                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Skills</a></li>
                 <li><a href="#education" onclick="togglemenu()">Learning & Development</a></li>
                 <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
             </div>
@@ -70,8 +70,8 @@
                 <!-- change this pic to a new one later -->
                 <img src="./assets/profile-picture.png" alt="Profile picture">
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
+            <div class="section-details-container">
+                <div class="section-block-container">
                     <div class="details-container">
                         <img src="./assets/experience-icon.png" alt="Experience icon" class="icon icon-small">
                         <h2>Experience</h2>
@@ -88,7 +88,6 @@
                         </p>  
                     </div>
                     <div class="details-container">
-                        <!-- ToDo: figure out how to move this inside of 'about-containers' -->
                     <img src="./assets/certificate-icon.png" alt="Certifications icon" class="icon icon-small">
                     <h2>Certifications</h2>
                     <p>Google Project Management Professional Certificate</p>
@@ -113,16 +112,29 @@
         onclick="location.href='./#experience'">
     </section>
     <section id="experience">
-        <h1 class="title">My Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
+        <p class="section__text__p1">An overview of</p>
+        <h1 class="title">My Skills</h1>
+        <div class="section-container experience-section-container">
+            <div class="section-block-container">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">IT Consultant</h2>
+                    <h2 class="section-sub-title experience-sub-title">IT Consultant</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark-icon.png" alt="Experience icon" 
                             class="icon-small">
                             <h3>Technical Communication</h3>
+                            <p>Experienced</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
+                            <h3>Requirements Analysis</h3>
+                            <p>Experienced</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
+                            <h3>Stakeholder Engagement</h3>
                             <p>Experienced</p>
                         </article>
                         <article>
@@ -134,19 +146,43 @@
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Software Development</h2>
+                    <h2 class="section-sub-title experience-sub-title">Software Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark-icon.png" alt="Experience icon" 
                             class="icon-small">
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
+                            <h3>Django</h3>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
+                            <h3>Django REST Framework</h3>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
                             <h3>HTML</h3>
-                            <p>Experienced</p>
+                            <p>Intermediate</p>
                         </article>
                         <article>
                             <img src="./assets/checkmark-icon.png" alt="Experience icon" 
                             class="icon-small">
                             <h3>CSS</h3>
-                            <p>Experienced</p>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark-icon.png" alt="Experience icon" 
+                            class="icon-small">
+                            <h3>Java</h3>
+                            <p>Basic</p>
                         </article>
                     </div>
                 </div>
@@ -158,7 +194,97 @@
     </section>
     <section id="education">
         <h1 class="title">Learning & Development</h1>
-        <!-- figure this out on your own -->
+        <div class="section-container">
+           <div class="education-accordions-container">
+                <div class="education-accordion expanded">
+                    <div class="label-container">
+                        <div class="expand-icon rotate">
+                            <!-- creates a plus icon  -->
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3 class="section-sub-title">
+                            Doshisha University
+                        </h3>
+                    </div>
+                    <div class="accordion-text section__text__p1">
+                        <p>
+                            I graduated from Doshisha University with a Bachelor of Arts in Liberal Arts, 
+                            specializing in Anthropology. To complement my studies, I delved into the quantitative 
+                            side of research by taking several math, statistics, and data visualization courses. 
+                            These courses introduced me to the R programming language and fostered a strong foundation 
+                            in programmatic thinking. My experience as a student assistant for the data visualization 
+                            course further solidified my understanding of R and programming concepts.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-accordion">
+                    <div class="label-container">
+                        <div class="expand-icon">
+                            <!-- creates a plus icon  -->
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3 class="section-sub-title">
+                            Google Project Management Professional Certificate
+                        </h3>
+                    </div>
+                    <div class="accordion-text section__text__p1">
+                        <p>
+                            Earlier this year, I successfully completed the Google Project Management Professional Certificate.
+                             Through this rigorous program, I acquired a solid foundation in project management methodologies. 
+                             I improved my skills in time, budget, scope, and stakeholder management, as well as gained proficiency 
+                             in the essential tools and techniques utilized by project managers to deliver projects successfully.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-accordion">
+                    <div class="label-container">
+                        <div class="expand-icon">
+                            <!-- creates a plus icon  -->
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3 class="section-sub-title">
+                            Meta Backend Developer Professional Certificate
+                        </h3>
+                    </div>
+                    <div class="accordion-text section__text__p1">
+                        <p>
+                            Currently enrolled in the Meta Backend Developer Professional Certificate, I've been thoroughly enjoying
+                             the learning process. So far, I've acquired valuable skills in web frameworks, particularly Django, 
+                             and have delved into the development of RESTful APIs using Django REST Framework. 
+                             Additionally, I've deepened my understanding of Python within the context of web development. 
+                             I am eager to continue my learning journey as I progress through this enriching program.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-accordion">
+                    <div class="label-container">
+                        <div class="expand-icon">
+                            <!-- creates a plus icon  -->
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h3 class="section-sub-title">
+                            Self Learning
+                        </h3>
+                    </div>
+                    <div class="accordion-text section__text__p1">
+                        <p>
+                            As a self-directed learner, I've consistently sought out new challenges to expand my skill set.
+                             Recent accomplishments include developing a recursive Sudoku solver in Python and acquiring a 
+                             foundational understanding of HTML, CSS, and JavaScript to create this portfolio website. 
+                             While I've also completed several Java courses, Python currently holds my primary preference. 
+                             I remain dedicated to continuous learning and am eager to seize opportunities for further growth and aquiring new skills.
+                        </p>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <img src="./assets/arrow-icon.png" alt="Arrow icon" 
+        class="icon icon-clickable icon-arrow" 
+        onclick="location.href='./#contact'">
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in touch</p>
@@ -181,7 +307,7 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#experience">Skills</a></li>
                     <li><a href="#education">Learning & Development</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
